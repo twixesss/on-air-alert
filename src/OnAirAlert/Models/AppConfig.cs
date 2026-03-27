@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AyanoTimer.Models;
+namespace OnAirAlert.Models;
 
 public class AppConfig
 {

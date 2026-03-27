@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-PROJ="src/AyanoTimer/AyanoTimer.csproj"
+PROJ="src/OnAirAlert/OnAirAlert.csproj"
 OUT="dist"
 
-echo "=== AyanoTimer Build ==="
+echo "=== OnAirAlert Build ==="
 
 rm -rf "$OUT"
 
@@ -22,5 +22,5 @@ echo "BGM ファイル (mp3/wav) をここに置いてください" > "$OUT/asse
 
 echo ""
 echo "=== Build complete ==="
-echo "Output: $OUT/AyanoTimer.exe"
-ls -lh "$OUT/AyanoTimer.exe"
+echo "Output: $OUT/OnAirAlert.exe"
+ls -lh "$OUT/OnAirAlert.exe"

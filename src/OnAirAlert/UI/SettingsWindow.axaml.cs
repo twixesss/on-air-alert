@@ -4,9 +4,9 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Platform.Storage;
-using AyanoTimer.Models;
+using OnAirAlert.Models;
 
-namespace AyanoTimer.UI;
+namespace OnAirAlert.UI;
 
 public partial class SettingsWindow : Window
 {

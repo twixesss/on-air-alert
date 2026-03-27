@@ -2,13 +2,13 @@ using System;
 using System.Runtime.Versioning;
 using Microsoft.Win32;
 
-namespace AyanoTimer.Services;
+namespace OnAirAlert.Services;
 
 [SupportedOSPlatform("windows")]
 
 public static class AutoStartService
 {
-    private const string AppName = "AyanoTimer";
+    private const string AppName = "OnAirAlert";
     private const string RunKeyPath = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
     public static bool IsEnabled()

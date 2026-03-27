@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Ical.Net;
 using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
-using AyanoTimer.Models;
+using OnAirAlert.Models;
 
-namespace AyanoTimer.Services;
+namespace OnAirAlert.Services;
 
 public class CalendarService
 {

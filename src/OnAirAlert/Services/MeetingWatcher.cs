@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using AyanoTimer.Models;
+using OnAirAlert.Models;
 
-namespace AyanoTimer.Services;
+namespace OnAirAlert.Services;
 
 public enum WatcherState
 {

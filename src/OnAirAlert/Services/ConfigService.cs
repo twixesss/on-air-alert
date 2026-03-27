@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using AyanoTimer.Models;
+using OnAirAlert.Models;
 
-namespace AyanoTimer.Services;
+namespace OnAirAlert.Services;
 
 [JsonSerializable(typeof(AppConfig))]
 [JsonSourceGenerationOptions(WriteIndented = true, PropertyNamingPolicy = JsonKnownNamingPolicy.SnakeCaseLower)]

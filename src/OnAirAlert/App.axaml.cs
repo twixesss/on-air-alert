@@ -4,11 +4,11 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
-using AyanoTimer.Models;
-using AyanoTimer.Services;
-using AyanoTimer.UI;
+using OnAirAlert.Models;
+using OnAirAlert.Services;
+using OnAirAlert.UI;
 
-namespace AyanoTimer;
+namespace OnAirAlert;
 
 public class App : Application
 {
@@ -90,7 +90,7 @@ public class App : Application
 
         _trayIcon = new TrayIcon
         {
-            ToolTipText = "AyanoTimer",
+            ToolTipText = "OnAirAlert",
             Menu = menu,
             Icon = _defaultIcon,
             IsVisible = true
@@ -136,7 +136,7 @@ public class App : Application
         {
             _countdownWindow.UpdateRemainingSeconds(remainingSeconds);
             _trayIcon.Icon = IconGenerator.CreateNumberIcon(remainingSeconds);
-            _trayIcon.ToolTipText = $"AyanoTimer - あと {remainingSeconds}秒";
+            _trayIcon.ToolTipText = $"OnAirAlert - あと {remainingSeconds}秒";
         });
     }
 
@@ -147,7 +147,7 @@ public class App : Application
             _audioService.Stop();
             _countdownWindow.SwitchToLive();
             _trayIcon.Icon = IconGenerator.CreateLiveIcon();
-            _trayIcon.ToolTipText = $"AyanoTimer - {meeting.Title} IS LIVE!";
+            _trayIcon.ToolTipText = $"OnAirAlert - {meeting.Title} IS LIVE!";
         });
     }
 
@@ -157,7 +157,7 @@ public class App : Application
         {
             _countdownWindow.CloseCountdown();
             _trayIcon.Icon = _defaultIcon;
-            _trayIcon.ToolTipText = "AyanoTimer";
+            _trayIcon.ToolTipText = "OnAirAlert";
         });
     }
 

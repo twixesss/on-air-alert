@@ -5,7 +5,7 @@ using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 
-namespace AyanoTimer.Services;
+namespace OnAirAlert.Services;
 
 public static class IconGenerator
 {

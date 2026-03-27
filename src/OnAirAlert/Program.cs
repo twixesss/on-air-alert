@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading;
 using Avalonia;
 
-namespace AyanoTimer;
+namespace OnAirAlert;
 
 static class Program
 {
@@ -13,7 +13,7 @@ static class Program
     public static void Main(string[] args)
     {
         // Prevent multiple instances
-        const string mutexName = "AyanoTimer_SingleInstance";
+        const string mutexName = "OnAirAlert_SingleInstance";
         _mutex = new Mutex(true, mutexName, out bool createdNew);
 
         if (!createdNew)

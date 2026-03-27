@@ -4,8 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <AssemblyName>AyanoTimer</AssemblyName>
-    <RootNamespace>AyanoTimer</RootNamespace>
+    <AssemblyName>OnAirAlert</AssemblyName>
+    <RootNamespace>OnAirAlert</RootNamespace>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>

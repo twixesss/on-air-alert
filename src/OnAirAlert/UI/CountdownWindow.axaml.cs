@@ -4,9 +4,9 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Media;
 using Avalonia.Threading;
-using AyanoTimer.Models;
+using OnAirAlert.Models;
 
-namespace AyanoTimer.UI;
+namespace OnAirAlert.UI;
 
 public partial class CountdownWindow : Window
 {

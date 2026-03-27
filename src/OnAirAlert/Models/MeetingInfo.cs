@@ -1,6 +1,6 @@
 using System;
 
-namespace AyanoTimer.Models;
+namespace OnAirAlert.Models;
 
 public class MeetingInfo
 {
