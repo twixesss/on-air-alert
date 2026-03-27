@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AyanoTimer.UI.CountdownWindow"
+        Title="AyanoTimer"
+        SystemDecorations="None"
+        Topmost="True"
+        ShowInTaskbar="False"
+        CanResize="False"
+        Width="300" Height="110"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent"
+        PointerPressed="OnPointerPressed">
+
+  <Border x:Name="RootBorder"
+          Background="#E6202020"
+          CornerRadius="12"
+          Margin="4"
+          BoxShadow="0 4 12 0 #40000000">
+    <Grid>
+      <StackPanel Margin="20,14">
+        <TextBlock x:Name="TitleText"
+                   Foreground="#AAAAAA"
+                   FontSize="13"
+                   TextTrimming="CharacterEllipsis"
+                   Margin="0,0,24,0" />
+        <TextBlock x:Name="CountdownText"
+                   Foreground="White"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   FontFamily="Consolas, monospace"
+                   HorizontalAlignment="Center"
+                   Margin="0,4,0,0" />
+      </StackPanel>
+      <Button x:Name="CloseButton"
+              Content="✕"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Top"
+              Margin="0,8,8,0"
+              Padding="4"
+              FontSize="12"
+              Foreground="#888888"
+              Background="Transparent"
+              BorderThickness="0"
+              Click="OnCloseClick" />
+    </Grid>
+  </Border>
+
+</Window>

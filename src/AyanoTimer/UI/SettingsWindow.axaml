@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AyanoTimer.UI.SettingsWindow"
+        Title="AyanoTimer - 設定"
+        Width="480" Height="520"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E1E">
+
+  <ScrollViewer>
+  <StackPanel Margin="24">
+
+    <!-- iCal URL -->
+    <TextBlock Text="カレンダー URL / ファイルパス" Foreground="#CCC" Margin="0,0,0,4" />
+    <TextBox x:Name="IcalUrlBox" Watermark="https://... または calendar.ics" />
+
+    <!-- BGM ファイル -->
+    <TextBlock Text="BGM ファイル" Foreground="#CCC" Margin="0,16,0,4" />
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBox x:Name="BgmFileBox" Grid.Column="0" Watermark="assets\bgm.mp3" />
+      <Button x:Name="BrowseBgmButton" Grid.Column="1" Content="参照..." Margin="8,0,0,0"
+              Click="OnBrowseBgm" />
+    </Grid>
+
+    <!-- 何秒前から -->
+    <TextBlock Text="何秒前からカウントダウン開始" Foreground="#CCC" Margin="0,16,0,4" />
+    <NumericUpDown x:Name="AlertSecondsBox" Minimum="5" Maximum="300" Increment="5"
+                   FormatString="0" Value="30" />
+
+    <!-- キーワード -->
+    <TextBlock Text="ミーティング判定キーワード（カンマ区切り）" Foreground="#CCC" Margin="0,16,0,4" />
+    <TextBox x:Name="KeywordsBox" Watermark="ミーティング,会議,MTG,sync,meet,zoom,teams" />
+
+    <!-- ウィンドウ位置 -->
+    <TextBlock Text="カウントダウン表示位置" Foreground="#CCC" Margin="0,16,0,4" />
+    <ComboBox x:Name="PositionBox" SelectedIndex="0">
+      <ComboBoxItem Content="右下" Tag="bottom-right" />
+      <ComboBoxItem Content="左下" Tag="bottom-left" />
+      <ComboBoxItem Content="右上" Tag="top-right" />
+      <ComboBoxItem Content="左上" Tag="top-left" />
+    </ComboBox>
+
+    <!-- 自動起動 -->
+    <CheckBox x:Name="AutoStartBox" Content="Windows 起動時に自動起動" Foreground="#CCC"
+              Margin="0,16,0,0" />
+
+    <!-- ボタン -->
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,24,0,0" Spacing="12">
+      <Button x:Name="CancelButton" Content="キャンセル" Click="OnCancel" Width="100" />
+      <Button x:Name="SaveButton" Content="保存" Click="OnSave" Width="100"
+              Classes="accent" />
+    </StackPanel>
+
+  </StackPanel>
+  </ScrollViewer>
+
+</Window>
